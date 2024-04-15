@@ -1,0 +1,60 @@
+.root {
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff00ff);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    background-color: black;
+    color: #fff;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+    letter-spacing: 0.15px;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-decoration: none;
+    &:hover {
+        background-color: #4361ee;
+        transition: all 500ms;
+    }
+}
+
+.headerNav {
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+        color: rgb(67, 97, 238);
+        transition: all 500ms;
+    }
+}
+
+.buttons {
+    button {
+        margin-left: 10px;
+    }
+    a {
+        text-decoration: none;
+    }
+}
